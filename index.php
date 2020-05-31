@@ -37,6 +37,9 @@
 </head>
 
 <body>
+  <?php 
+  date_default_timezone_set("Asia/Jakarta");
+  ?>
  
   <!-- Main content -->
   <div class="main-content" id="panel">
@@ -58,16 +61,17 @@
       <div class="container-fluid">
         <div class="header-body">
           <div class="row align-items-center py-4">
-            <div class="col-lg-4 col-7">
+            <div class="col-lg-4 col-12">
               
             </div>
-            <div class="col-lg-4 col-7">
+            <div class="col-lg-4 col-12">
               <center>
                 <h1 class="text-white d-inline-block" style="font-size: 36px;">CORONA INFO</h1>
                 <h3 class="text-white">Data corona Indonesia LIVE</h1>
+                <p class="text-white" style="font-size: 14px;">Data per <?php echo date("d M Y H:i:s")." WIB" ?></p>
               </center>
             </div>
-            <div class="col-lg-4 col-7">
+            <div class="col-lg-4 col-12">
              
             </div>
           </div>
@@ -162,7 +166,7 @@
             </div>
             <div class="table-responsive">
               <!-- Projects table -->
-              <table class="table align-items-center table-flush" id="tableku">
+              <table class="table align-items-center table-flush fixed_header" id="tableku">
                 <thead class="thead-light">
                   <tr>
                     <th scope="col">NO</th>
@@ -172,7 +176,7 @@
                     <th scope="col">MENINGGAL</th>
                   </tr>
                 </thead>
-                <tbody class="isiprov" style="overflow-y: auto;">
+                <tbody class="isiprov" style="overflow-y: auto;overflow-x:auto;height:300px !important">
                     
                 </tbody>
               </table>
@@ -192,16 +196,18 @@
           <div class="col-lg-6">
             <ul class="nav nav-footer justify-content-center justify-content-lg-end">
               <li class="nav-item">
-                <a href="https://www.creative-tim.com" class="nav-link" target="_blank">Creative Tim</a>
+                <a href="http://facebook.com/iqbal.hanafifralamp" class="nav-link" target="_blank">
+                  Facebook
+                </a>
               </li>
               <li class="nav-item">
-                <a href="https://www.creative-tim.com/presentation" class="nav-link" target="_blank">About Us</a>
+                <a href="https://www.instagram.com/iqbalfralamp/" class="nav-link" target="_blank">Instagram</a>
               </li>
               <li class="nav-item">
-                <a href="http://blog.creative-tim.com" class="nav-link" target="_blank">Blog</a>
+                <a href="https://www.linkedin.com/in/iqbal-hanafi-0b035a155/" class="nav-link" target="_blank">Linkedin</a>
               </li>
               <li class="nav-item">
-                <a href="https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md" class="nav-link" target="_blank">MIT License</a>
+                <a href="https://github.com/Iqbalhanafi20" class="nav-link" target="_blank">Github</a>
               </li>
             </ul>
           </div>
