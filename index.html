@@ -80,12 +80,10 @@
                   <div class="row">
                     <div class="col">
                       <h5 class="card-title text-uppercase text-muted mb-0">Total Positif</h5>
-                      <span class="h2 font-weight-bold mb-0 positif">0</span>
+                      <span class="h2 font-weight-bold mb-0 positif"><img src="assets/img/theme/loading.gif" width="50" height="30" alt=""></span>
                     </div>
                     <div class="col-auto">
-                      <div class="icon icon-shape bg-gradient-blue text-white rounded-circle shadow">
-                        <i class="ni ni-active-40"></i>
-                      </div>
+                      <img src="assets/img/theme/positif.png" width="50" height="50" alt="Positif">
                     </div>
                   </div>
                   
@@ -99,12 +97,10 @@
                   <div class="row">
                     <div class="col">
                       <h5 class="card-title text-uppercase text-muted mb-0">Total Dirawat</h5>
-                      <span class="h2 font-weight-bold mb-0 dirawat">0</span>
+                      <span class="h2 font-weight-bold mb-0 dirawat"><img src="assets/img/theme/loading.gif" width="50" height="30" alt=""></span>
                     </div>
                     <div class="col-auto">
-                      <div class="icon icon-shape bg-gradient-red text-white rounded-circle shadow">
-                        <i class="ni ni-active-40"></i>
-                      </div>
+                      <img src="assets/img/theme/dirawat.png" width="50" height="50" alt="dirawat">
                     </div>
                   </div>
                   
@@ -118,12 +114,10 @@
                   <div class="row">
                     <div class="col">
                       <h5 class="card-title text-uppercase text-muted mb-0">Total Meninggal</h5>
-                      <span class="h2 font-weight-bold mb-0 meninggal">0</span>
+                      <span class="h2 font-weight-bold mb-0 meninggal"><img src="assets/img/theme/loading.gif" width="50" height="30" alt=""></span>
                     </div>
                     <div class="col-auto">
-                      <div class="icon icon-shape bg-gradient-orange text-white rounded-circle shadow">
-                        <i class="ni ni-chart-pie-35"></i>
-                      </div>
+                      <img src="assets/img/theme/meninggal.png" width="50" height="50" alt="meninggal">
                     </div>
                   </div>
                   
@@ -137,12 +131,10 @@
                   <div class="row">
                     <div class="col">
                       <h5 class="card-title text-uppercase text-muted mb-0">Total Sembuh</h5>
-                      <span class="h2 font-weight-bold mb-0 sembuh">0</span>
+                      <span class="h2 font-weight-bold mb-0 sembuh"><img src="assets/img/theme/loading.gif" width="50" height="30" alt=""></span>
                     </div>
                     <div class="col-auto">
-                      <div class="icon icon-shape bg-gradient-green text-white rounded-circle shadow">
-                        <i class="ni ni-money-coins"></i>
-                      </div>
+                      <img src="assets/img/theme/sembuh.png" width="50" height="50" alt="sembuh">
                     </div>
                   </div>
                  
@@ -163,93 +155,25 @@
             <div class="card-header border-0">
               <div class="row align-items-center">
                 <div class="col">
-                  <h3 class="mb-0">Data Corona di Indonesia</h3>
+                  <h3 class="mb-0">Data Corona di Indonesia per Provinsi</h3>
                 </div>
                
               </div>
             </div>
             <div class="table-responsive">
               <!-- Projects table -->
-              <table class="table align-items-center table-flush">
+              <table class="table align-items-center table-flush" id="tableku">
                 <thead class="thead-light">
                   <tr>
-                    <th scope="col">Page name</th>
-                    <th scope="col">Visitors</th>
-                    <th scope="col">Unique users</th>
-                    <th scope="col">Bounce rate</th>
+                    <th scope="col">NO</th>
+                    <th scope="col">PROVINSI</th>
+                    <th scope="col">POSITIF</th>
+                    <th scope="col">SEMBUH</th>
+                    <th scope="col">MENINGGAL</th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">
-                      /argon/
-                    </th>
-                    <td>
-                      4,569
-                    </td>
-                    <td>
-                      340
-                    </td>
-                    <td>
-                      <i class="fas fa-arrow-up text-success mr-3"></i> 46,53%
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      /argon/index.html
-                    </th>
-                    <td>
-                      3,985
-                    </td>
-                    <td>
-                      319
-                    </td>
-                    <td>
-                      <i class="fas fa-arrow-down text-warning mr-3"></i> 46,53%
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      /argon/charts.html
-                    </th>
-                    <td>
-                      3,513
-                    </td>
-                    <td>
-                      294
-                    </td>
-                    <td>
-                      <i class="fas fa-arrow-down text-warning mr-3"></i> 36,49%
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      /argon/tables.html
-                    </th>
-                    <td>
-                      2,050
-                    </td>
-                    <td>
-                      147
-                    </td>
-                    <td>
-                      <i class="fas fa-arrow-up text-success mr-3"></i> 50,87%
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      /argon/profile.html
-                    </th>
-                    <td>
-                      1,795
-                    </td>
-                    <td>
-                      190
-                    </td>
-                    <td>
-                      <i class="fas fa-arrow-down text-danger mr-3"></i> 46,53%
-                    </td>
-                  </tr>
+                <tbody class="isiprov" style="overflow-y: auto;">
+                    
                 </tbody>
               </table>
             </div>

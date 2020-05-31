@@ -19,4 +19,15 @@ $(document).ready(function(){
             $(".meninggal").html(meninggal);
         }
     });
+
+    $.ajax({
+        type : "POST",
+        url  : "sumber.php",
+        data : {
+            tipe:"dataprov"
+        },
+        success : function(data){
+            $(".isiprov").html(data);
+        }
+    });
 });
