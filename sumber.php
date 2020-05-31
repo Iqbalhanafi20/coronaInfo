@@ -27,6 +27,11 @@ if($tipe=="dataindo"){
 
     foreach($data as $row){
         $positif = $row['positif'];
+        $sembuh = $row['sembuh'];
+        $meninggal = $row['meninggal'];
+        $dirawat = $row['dirawat'];
+        $gabung = $positif."+".$sembuh."+".$meninggal."+".$dirawat."+";
+        echo $gabung;
     }
 }
 ?>
