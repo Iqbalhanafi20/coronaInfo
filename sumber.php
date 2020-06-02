@@ -11,15 +11,19 @@ if($tipe=="dataindo"){
     // echo $output;
 
     $data = json_decode($output, TRUE);
-
-    foreach($data as $row){
-        $positif = $row['positif'];
-        $sembuh = $row['sembuh'];
-        $meninggal = $row['meninggal'];
-        $dirawat = $row['dirawat'];
-        $gabung = $positif."+".$sembuh."+".$meninggal."+".$dirawat."+";
-        echo $gabung;
-    }
+    if($data == false){
+        $gabung = "0+0+0+0+";
+            echo $gabung;
+    }else{
+        foreach($data as $row){
+            $positif = $row['positif'];
+            $sembuh = $row['sembuh'];
+            $meninggal = $row['meninggal'];
+            $dirawat = $row['dirawat'];
+            $gabung = $positif."+".$sembuh."+".$meninggal."+".$dirawat."+";
+            echo $gabung;
+        }
+    }    
     
 }
 
