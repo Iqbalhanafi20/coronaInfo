@@ -1,4 +1,4 @@
-table {
+/* table {
     width: 100%;
 }
 
@@ -14,10 +14,10 @@ tr:after {
 thead th {
     height: 37px;
 
-    /*text-align: left;*/
-}
+    text-align: left;
+} 
 
-tbody {
+ tbody {
     height: 130px;
     overflow-y: auto;
 }
@@ -26,6 +26,10 @@ tbody {
 tbody td, thead th {
     width: 19.5%;
     float: left;
+}  */
+
+.table-responsive{
+    height: 400px;
 }
 
 .titleprev{
